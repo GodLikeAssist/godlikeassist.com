@@ -1,1 +1,1 @@
-# stableautoclicker.web
+# godlikeassist.com
