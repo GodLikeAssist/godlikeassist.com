@@ -1,165 +1,1017 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Auto Clicker GA</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <title>Privacy Policy</title>
+    <link rel="stylesheet" href="./privacy-policy.css" />
+    <style data-id="immersive-translate-input-injected-css">
+      .immersive-translate-input {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 2147483647;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .immersive-translate-loading-spinner {
+        vertical-align: middle !important;
+        width: 10px !important;
+        height: 10px !important;
+        display: inline-block !important;
+        margin: 0 4px !important;
+        border: 2px rgba(221, 244, 255, 0.6) solid !important;
+        border-top: 2px rgba(0, 0, 0, 0.375) solid !important;
+        border-left: 2px rgba(0, 0, 0, 0.375) solid !important;
+        border-radius: 50% !important;
+        padding: 0 !important;
+        -webkit-animation: immersive-translate-loading-animation 0.6s infinite
+          linear !important;
+        animation: immersive-translate-loading-animation 0.6s infinite linear !important;
+      }
+
+      @-webkit-keyframes immersive-translate-loading-animation {
+        from {
+          -webkit-transform: rotate(0deg);
+        }
+
+        to {
+          -webkit-transform: rotate(359deg);
+        }
+      }
+
+      @keyframes immersive-translate-loading-animation {
+        from {
+          transform: rotate(0deg);
+        }
+
+        to {
+          transform: rotate(359deg);
+        }
+      }
+
+      .immersive-translate-input-loading {
+        --loading-color: #f78fb6;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        display: block;
+        margin: 12px auto;
+        position: relative;
+        color: white;
+        left: -100px;
+        box-sizing: border-box;
+        animation: immersiveTranslateShadowRolling 1.5s linear infinite;
+      }
+
+      @keyframes immersiveTranslateShadowRolling {
+        0% {
+          box-shadow: 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0),
+            0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
+        }
+
+        12% {
+          box-shadow: 100px 0 var(--loading-color), 0px 0 rgba(255, 255, 255, 0),
+            0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
+        }
+
+        25% {
+          box-shadow: 110px 0 var(--loading-color), 100px 0 var(--loading-color),
+            0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
+        }
+
+        36% {
+          box-shadow: 120px 0 var(--loading-color), 110px 0 var(--loading-color),
+            100px 0 var(--loading-color), 0px 0 rgba(255, 255, 255, 0);
+        }
+
+        50% {
+          box-shadow: 130px 0 var(--loading-color), 120px 0 var(--loading-color),
+            110px 0 var(--loading-color), 100px 0 var(--loading-color);
+        }
+
+        62% {
+          box-shadow: 200px 0 rgba(255, 255, 255, 0),
+            130px 0 var(--loading-color), 120px 0 var(--loading-color),
+            110px 0 var(--loading-color);
+        }
+
+        75% {
+          box-shadow: 200px 0 rgba(255, 255, 255, 0),
+            200px 0 rgba(255, 255, 255, 0), 130px 0 var(--loading-color),
+            120px 0 var(--loading-color);
+        }
+
+        87% {
+          box-shadow: 200px 0 rgba(255, 255, 255, 0),
+            200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0),
+            130px 0 var(--loading-color);
+        }
+
+        100% {
+          box-shadow: 200px 0 rgba(255, 255, 255, 0),
+            200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0),
+            200px 0 rgba(255, 255, 255, 0);
+        }
+      }
+
+      .immersive-translate-search-recomend {
+        border: 1px solid #dadce0;
+        border-radius: 8px;
+        padding: 16px;
+        margin-bottom: 16px;
+        position: relative;
+        font-size: 16px;
+      }
+      .immersive-translate-search-enhancement-en-title {
+        color: #4d5156;
+      }
+      /* dark */
+      @media (prefers-color-scheme: dark) {
+        .immersive-translate-search-recomend {
+          border: 1px solid #3c4043;
+        }
+        .immersive-translate-close-action svg {
+          fill: #bdc1c6;
+        }
+
+        .immersive-translate-search-enhancement-en-title {
+          color: #bdc1c6;
+        }
+      }
+
+      .immersive-translate-search-settings {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        cursor: pointer;
+      }
+
+      .immersive-translate-search-recomend::before {
+        /* content: " "; */
+        /* width: 20px; */
+        /* height: 20px; */
+        /* top: 16px; */
+        /* position: absolute; */
+        /* background: center / contain url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAxlBMVEUAAADpTInqTIjpSofnSIfqS4nfS4XqS4nqTIjsTYnrTInqTIroS4jvQIDqTIn////+/v7rSYjpTIn8/v7uaZzrTIr9/f3wfansWJL88/b85e73qc39+/v3xNnylrvrVI/98fb62Obva5/8+fr76vH4y9zpSIj74e353Oj1ocTzm77xhK/veKbtYpjsXJTqU47oTInxjrXyh7L99fj40eH2ttH1udD3sc31ssz1rMnykLXucqPtbqD85e/1xdn2u9DzqcXrUY6FaJb8AAAADnRSTlMA34BgIM8Q37/fz7+/EGOHcVQAAAGhSURBVDjLhZPncuowEEZFTW7bXVU7xsYYTO/p7bb3f6lICIOYJOT4h7/VnFmvrBFjrF3/CR/SajBHswafctG0Qg3O8O0Xa8BZ6uw7eLjqr30SofCDVSkemMinfL1ecy20r5ygR5zz3ArcAqJExPTPKhDENEmS30Q9+yo4lEQkqVTiIEAHCT10xWERRdH0Bq0aCOPZNDV3s0xaYce1lHEoDHU8wEh3qRJypNcTAeKUIjgKMeGLDoRCLVLTVf+Ownj8Kk6H9HM6QXPgYjQSB0F00EJEu10ILQrs/QeP77BSSr0MzLOyuJJQbnUoOOIUI/A8EeJk9E4YUHUWiRyTVKGgQUB8/3e/NpdGlfI+FMQyWsCBWyz4A/ZyHXyiiz0Ne5aGZssoxRmcChw8/EFKQ5JwwkUo3FRT5yXS7q+Y/rHDZmFktzpGMvO+5QofA4FPpEmGw+EWRCFvnaof7Zhe8NuYSLR0xErKLThUSs8gnODh87ssy6438yzbLzxl012HS19vfCf3CNhnbWOL1eEsDda+gDPUvri8tSZzNFrwIZf1NmNvqC1I/t8j7nYAAAAASUVORK5CYII='); */
+      }
+
+      .immersive-translate-search-title {
+      }
+
+      .immersive-translate-search-title-wrapper {
+      }
+
+      .immersive-translate-search-time {
+        font-size: 12px;
+        margin: 4px 0 24px;
+        color: #70757a;
+      }
+
+      .immersive-translate-expand-items {
+        display: none;
+      }
+
+      .immersive-translate-search-more {
+        margin-top: 16px;
+        font-size: 14px;
+      }
+
+      .immersive-translate-modal {
+        display: none;
+        position: fixed;
+        z-index: 1000000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+        font-size: 15px;
+      }
+
+      .immersive-translate-modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        border-radius: 10px;
+        width: 80%;
+        max-width: 500px;
+        font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu",
+          "Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji",
+          "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      }
+
+      .immersive-translate-modal-title {
+        font-size: 1.3rem;
+        font-weight: 500;
+        margin-bottom: 20px;
+        color: hsl(205, 20%, 32%);
+      }
+
+      .immersive-translate-modal-body {
+        color: hsl(205, 20%, 32%);
+      }
+
+      .immersive-translate-close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+
+      .immersive-translate-close:hover,
+      .immersive-translate-close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .immersive-translate-modal-footer {
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        margin-top: 20px;
+      }
+
+      .immersive-translate-btn {
+        width: fit-content;
+        color: #fff;
+        background-color: #ea4c89;
+        border: none;
+        font-size: 14px;
+        margin: 5px;
+        padding: 10px 20px;
+        font-size: 1rem;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .immersive-translate-btn:hover {
+        background-color: #f082ac;
+      }
+      .immersive-translate-cancel-btn {
+        /* gray color */
+        background-color: rgb(89, 107, 120);
+      }
+
+      .immersive-translate-cancel-btn:hover {
+        background-color: hsl(205, 20%, 32%);
+      }
+
+      .immersive-translate-btn svg {
+        margin-right: 5px;
+      }
+
+      .immersive-translate-link {
+        cursor: pointer;
+        user-select: none;
+        -webkit-user-drag: none;
+        text-decoration: none;
+        color: #007bff;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+      }
+
+      .immersive-translate-primary-link {
+        cursor: pointer;
+        user-select: none;
+        -webkit-user-drag: none;
+        text-decoration: none;
+        color: #ea4c89;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+      }
+
+      .immersive-translate-modal input[type="radio"] {
+        margin: 0 6px;
+        cursor: pointer;
+      }
+
+      .immersive-translate-modal label {
+        cursor: pointer;
+      }
+
+      .immersive-translate-close-action {
+        position: absolute;
+        top: 2px;
+        right: 0px;
+        cursor: pointer;
+      }
+    </style>
   </head>
-  <body>
-    <p>Privacy policy</p>
-    <p>
-      Please read this Privacy Policy carefully as it sets out important
-      information relating to how we handle your personal information.The
-      &nbsp;Auto Clicker app is an Ad Supported app. This SERVICE is at no cost
-      and is intended for use as is.
-    </p>
-    <p><br /></p>
-    <p>
-      This page is used to inform visitors regarding my policies with the
-      collection, use, and disclosure of Personal Information if anyone decided
-      to use my Service.
-    </p>
-    <p><br /></p>
-    <p>
-      If you choose to use my Service, then you agree to the collection and use
-      of information in relation to this policy. The Personal Information that I
-      collect is used for providing and improving the Service. I will not use or
-      share your information with anyone except as described in this Privacy
-      Policy.
-    </p>
-    <p><br /></p>
-    <p>
-      The terms used in this Privacy Policy have the same meanings as in our
-      Terms and Conditions, which is accessible at &nbsp;Auto Clicker unless
-      otherwise defined in this Privacy Policy.
-    </p>
-    <p><br /></p>
-    <p>Information Collection and Use</p>
-    <p><br /></p>
-    <p>
-      For a better experience, while using our Service, I may require you to
-      provide us with certain personally identifiable information. The
-      information that I request will be retained on your device and is not
-      collected by me in any way.
-    </p>
-    <p><br /></p>
-    <p>
-      The app does use third party services that may collect information used to
-      identify you.
-    </p>
-    <p><br /></p>
-    <p>
-      Link to privacy policy of third party service providers used by the app
-    </p>
-    <p><br /></p>
-    <p>&middot; Google Play Services</p>
-    <p><br /></p>
-    <p>&middot; AdMob</p>
-    <p><br /></p>
-    <p>&middot; Firebase Analytics</p>
-    <p><br /></p>
-    <p>Log Data</p>
-    <p><br /></p>
-    <p>
-      I want to inform you that whenever you use my Service, in a case of an
-      error in the app I collect data and information (through third party
-      products) on your phone called Log Data. This Log Data may include
-      information such as your device Internet Protocol (&ldquo;IP&rdquo;)
-      address, device name, operating system version, the configuration of the
-      app when utilizing my Service, the time and date of your use of the
-      Service, and other statistics.
-    </p>
-    <p><br /></p>
-    <p>Cookies</p>
-    <p><br /></p>
-    <p>
-      Cookies are files with a small amount of data that are commonly used as
-      anonymous unique identifiers. These are sent to your browser from the
-      websites that you visit and are stored on your device&apos;s internal
-      memory.
-    </p>
-    <p><br /></p>
-    <p>
-      This Service does not use these &ldquo;cookies&rdquo; explicitly. However,
-      the app may use third party code and libraries that use
-      &ldquo;cookies&rdquo; to collect information and improve their services.
-      You have the option to either accept or refuse these cookies and know when
-      a cookie is being sent to your device. If you choose to refuse our
-      cookies, you may not be able to use some portions of this Service.
-    </p>
-    <p><br /></p>
-    <p>Service Providers</p>
-    <p><br /></p>
-    <p>
-      I may employ third-party companies and individuals due to the following
-      reasons:
-    </p>
-    <p><br /></p>
-    <p>&middot; To facilitate our Service;</p>
-    <p><br /></p>
-    <p>&middot; To provide the Service on our behalf;</p>
-    <p><br /></p>
-    <p>&middot; To perform Service-related services; or</p>
-    <p><br /></p>
-    <p>&middot; To assist us in analyzing how our Service is used.</p>
-    <p><br /></p>
-    <p>
-      I want to inform users of this Service that these third parties have
-      access to your Personal Information. The reason is to perform the tasks
-      assigned to them on our behalf. However, they are obligated not to
-      disclose or use the information for any other purpose.
-    </p>
-    <p><br /></p>
-    <p>Security</p>
-    <p><br /></p>
-    <p>
-      I value your trust in providing us your Personal Information, thus we are
-      striving to use commercially acceptable means of protecting it. But
-      remember that no method of transmission over the internet, or method of
-      electronic storage is 100% secure and reliable, and I cannot guarantee its
-      absolute security.
-    </p>
-    <p><br /></p>
-    <p>Links to Other Sites</p>
-    <p><br /></p>
-    <p>
-      This Service may contain links to other sites. If you click on a
-      third-party link, you will be directed to that site. Note that these
-      external sites are not operated by me. Therefore, I strongly advise you to
-      review the Privacy Policy of these websites. I have no control over and
-      assume no responsibility for the content, privacy policies, or practices
-      of any third-party sites or services.
-    </p>
-    <p><br /></p>
-    <p>Children&rsquo;s Privacy</p>
-    <p><br /></p>
-    <p>
-      These Services do not address anyone under the age of 13. I do not
-      knowingly collect personally identifiable information from children under
-      13. In the case I discover that a child under 13 has provided me with
-      personal information, I immediately delete this from our servers. If you
-      are a parent or guardian and you are aware that your child has provided us
-      with personal information, please contact me so that I will be able to do
-      necessary actions.
-    </p>
-    <p><br /></p>
-    <p>Changes to This Privacy Policy</p>
-    <p><br /></p>
-    <p>
-      I may update our Privacy Policy from time to time. Thus, you are advised
-      to review this page periodically for any changes. I will notify you of any
-      changes by posting the new Privacy Policy on this page. These changes are
-      effective immediately after they are posted on this page.
-    </p>
-    <p><br /></p>
-    <p>Contact Us</p>
-    <p><br /></p>
-    <p>
-      If you have any questions or suggestions about my Privacy Policy, do not
-      hesitate to contact me at
-      <a data-fr-linked="true" href="mailto:stableautoclicker@gmail.com"
-        >stableautoclicker@gmail.com</a
-      >
-    </p>
-    <p><br /></p>
+  <body class="white">
+    <div id="content">
+      <h2>Privacy Policy</h2>
+      <p>Last updated: December 28, 2023</p>
+      <div>
+        <p>
+          We respect and protect the personal privacy of all users of the
+          Service. It’s significant to us that you know how to control and
+          protect your privacy. For this reason, We encourage You to read this
+          Privacy Policy thoroughly.
+        </p>
+        <p>
+          This Privacy Policy explains Our procedures concerning the information
+          We collect from You or that You provide to Us.
+          <b
+            >By using the Service, You agree to the collection and use of
+            information in accordance with this policy.</b
+          >
+        </p>
+        <p>
+          If You have any questions about how We use your information or want
+          further information about Our Privacy Policy and what it means, please
+          feel free to contact Us at stableautoclicker@gmail.com. We will endeavor
+          to provide detailed answers to your questions promptly.
+        </p>
+      </div>
+      <div id="local1">
+        <h3>1. Interpretation and Definitions</h3>
+        <h4>Interpretation</h4>
+        <p>
+          The words of which the initial letter is capitalized have meanings
+          defined under the following conditions.
+        </p>
+        <p>
+          The following definitions shall have the same meaning regardless of
+          whether they appear in singular or in plural.
+        </p>
+        <h4>Definitions</h4>
+        <p>For the purposes of this Privacy Policy:</p>
+        <ul>
+          <li>
+            <strong>You</strong> mean the individual accessing or using the
+            Service, or the company, or other legal entity on behalf of which
+            such individual is accessing or using the Service, as applicable.
+          </li>
+          <li>
+            <strong>We</strong> (referred to as either "We", "Us" or "Our" in
+            this Agreement) refers to the app developer team, GodLikeAssist Ltd.
+          </li>
+          <li>
+            <strong>Application</strong> means the software program provided by
+            Us downloaded by You on any electronic device, named GA Auto Clicker.
+          </li>
+          <li><strong>Service</strong> refers to the Application.</li>
+          <li>
+            <strong>Third-party Social Media Service</strong> refers to any
+            website or any social network website through which a user can log
+            in or create an Account to use the Service.
+          </li>
+          <li>
+            <strong>Personal Data</strong> is any information that relates to an
+            identified or identifiable individual.
+          </li>
+          <li>
+            <strong>Device</strong> means any device that can access the Service
+            such as a computer, a cellphone or a digital tablet.
+          </li>
+          <li>
+            <strong>Do Not Track</strong> (DNT) is a concept that has been
+            promoted by US regulatory authorities, in particular the U.S.
+            Federal Trade Commission (FTC), for the Internet industry to develop
+            and implement a mechanism for allowing internet users to control the
+            tracking of their online activities across websites.
+          </li>
+        </ul>
+      </div>
+      <div id="local2">
+        <h3>2. App Permissions and Information Collection</h3>
+        <h5>App Permissions Involved</h5>
+        <ul>
+          <li>
+            Accessibility Service (Necessary)
+            <p>
+              When you are using our app, we will request this permission to
+              help implement our app's main features, such as simulating auto
+              clicks and swipes on the screen. We do not collect your private
+              data through this permission.
+            </p>
+          </li>
+          <li>Ignore Battery Optimization (Optional)</li>
+          <p>
+            Turning on this permission ensures that the app will not be
+            automatically closed by the system when the device battery is low.
+            This allows the app to run safely in the background and provide a
+            consistently stable service for users. This permission is optional,
+            and without it, the quality of your experience may be affected.
+          </p>
+        </ul>
+
+        <h5>Information Collection</h5>
+        <p>
+          The information We collect and process depends on how You use Our
+          Service.
+        </p>
+
+        <h5>The information You actively provide during your use of Our app</h5>
+        <p>
+          You can freely create scripts using our app and the script data is
+          only stored locally on your device unless you actively log in and back
+          up. Besides, We will collect some operating information when you
+          interact with Our App, including the button click and page view. We
+          use this information to provide You with personal service and improve
+          Our App, including general settings You make (such as your choice of
+          preferred language) and the time and duration of your activities on
+          Our Service (which can help Us improve features that You may pay less
+          attention to).
+        </p>
+
+        <h5>Information from third-party social media services</h5>
+        <p>
+          If You choose to use the login service (for Our backup feature) using
+          a third-party social network Account (such as Google), in that case,
+          We may collect some third-party data automatically, such as your
+          Account name, email address and public information associated with
+          that Account.
+        </p>
+
+        <h5>The Information You actively provide when you send feedback</h5>
+        <p>
+          If You want to send feedback to us to improve your using experience,
+          We may collect your usage data, like theme type, App Version, system
+          version, screen size, language, country, app language, device, time
+          zone, network, account, and whether you subscribed, removed the ads.
+          This information is not mandatory collected, We do NOT collect them
+          unless you consent to provide the feedback. And We will delete this
+          feedback data periodically for a month.
+        </p>
+      </div>
+      <div id="local3">
+        <h3>3. How Do We Share the Information</h3>
+        <p>
+          To support and maintain Our Service, We may involve Google to provide
+          You with personalized ads. Google may collect certain personal data
+          (online identifier and ip address) for advertising, analytics, and
+          fraud prevention purposes. Please note that Google will access your
+          information only to perform their tasks on and are obligated not to
+          disclose or use it for any other purpose.
+          <b
+            >Moreover, We NEVER share the information You provide in Our app
+            (eg. your script information) with any third party.</b
+          >
+        </p>
+        <p>
+          Rest assured, Google will <b>request your consent</b> before
+          collecting, using or sharing your personal data/identifiable
+          information (like ip address or identifier). If You decline to share
+          your personal data with Google, Google will not access your personal
+          data for personalized ads.
+        </p>
+        <p>
+          <b
+            >You could opt out of the personalized ads on the settings or
+            following the instructions below, however, please note that You may
+            still see ads after turning off this option, but the relevance of
+            ads will be reduced.</b
+          >
+        </p>
+
+        <h5>•&nbsp;&nbsp;AdMob by Google</h5>
+        <p>
+          AdMob by Google is provided by Google LLC, which provides ads for
+          mobile apps.
+        </p>
+        <p>
+          For information on how Google Mobile Ads SDK collects, uses and shares
+          your data, please visit this page:
+          <a
+            >https://developers.google.com/admob/android/privacy/play-data-disclosure#data_collected_and_shared_automatically</a
+          >.
+        </p>
+        <p>
+          You can opt-out from the AdMob by Google service by following the
+          instructions described by Google:
+          <a>https://support.google.com/ads/answer/2662922?hl=en.</a>
+        </p>
+        <p>
+          For more information on how Google Admob uses the collected
+          information, please visit the Google Ads Data Processing Terms.
+        </p>
+        <p>
+          For more information on how Google uses the collected information,
+          please visit the "How Google uses data when you use our partners'
+          sites or app" page:
+          <a>https://policies.google.com/technologies/partner-sites</a> or visit
+          the Privacy Policy of Google:
+          <a>https://policies.google.com/privacy</a>.
+        </p>
+        <p>
+          For more information on the privacy practices of Google, please visit
+          the Google Privacy &amp; Terms web page:
+          <a>https://policies.google.com/privacy?hl=en</a>.
+        </p>
+
+        <h4>Payments</h4>
+        <p>
+          We may provide paid products and/or services within the Service. In
+          that case, we may use third-party services for payment processing
+          (e.g. payment processors).
+        </p>
+        <p>
+          <b>We will not store or collect your payment card details.</b> That
+          information is provided directly to Our third-party payment processors
+          whose use of your information is governed by their Privacy Policy.
+          These payment processors adhere to the standards set by PCI-DSS as
+          managed by the PCI Security Standards Council, which is a joint effort
+          of brands like Visa, Mastercard, American Express and Discover.
+          PCI-DSS requirements help ensure the secure handling of payment
+          information.
+        </p>
+
+        <h5>•&nbsp;&nbsp;Google Play In-App Payments</h5>
+        <p>
+          Their Privacy Policy can be viewed at
+          <a>https://www.google.com/policies/privacy/</a>.
+        </p>
+        <p>
+          When You use Our Service to pay for a product and/or service via bank
+          transfer, We may ask You to provide information to facilitate this
+          transaction and to verify your identity.
+        </p>
+        <p>
+          Except the following cases, we will not share your information with
+          any other third parties without your consent unless the following
+          situations:
+        </p>
+        <ul>
+          <li>To fulfill legal obligations, disclose to the authorities;</li>
+          <li>
+            To prevent you from being exposed to significant danger or
+            disadvantages while not possible to get your authorization in time;
+          </li>
+          <li>
+            the disclosure is anonymized and cannot be directed to you
+            personally; and
+          </li>
+          <li>in other cases permitted by laws and regulations.</li>
+        </ul>
+      </div>
+      <div id="local4">
+        <h3>4. How Do We Use the Information</h3>
+        <p>
+          We highly value your experience with Our App and are always trying to
+          improve current features and keep adding new features that Our users
+          want from time to time. Information We collect will help Us understand
+          what to improve and how We can improve. We may use the information for
+          the following purposes:
+        </p>
+        <ul>
+          <li>
+            <b>To provide and improve Our Service,</b> such as personalize the
+            content You receive in the App;
+          </li>
+          <li>
+            <b>To see if Our App is working correctly</b> and troubleshoot and
+            fix it when it’s not;
+          </li>
+          <li>
+            <b>To provide You with helpful user support</b> if You send Us
+            feedback about any questions You may have while using Our App;
+          </li>
+          <li>
+            <b>For the performance of a contract:</b> the development,
+            compliance, and undertaking of the purchase contract for the
+            products, items, or services You have purchased or of any other
+            contract with Us through the Service;
+          </li>
+          <li>
+            <b>To communicate with You,</b> such as a mobile application's push
+            notifications regarding updates or informative communications
+            related to the functionalities, products, or contracted services,
+            including the security updates, when necessary or reasonable for
+            their implementation;
+          </li>
+          <li>
+            <b
+              >To provide You with news, special offers, and general
+              information</b
+            >
+            about other goods, services, and events which We offer that are
+            similar to those that You have already purchased or enquired about
+            unless You have opted not to receive such information.
+          </li>
+          <li>
+            <b>For business transfers:</b> We may share or transfer your
+            information in connection with, or during negotiations of, any
+            merger, sale of Our assets, financing, or acquisition of all or a
+            portion of Our business to another company. However, before the
+            formal business transfer could take place, You have Our promise that
+            We will give You 2-week notice of the proposed transfer and the
+            basic details of the transferee company and the different Privacy
+            Policy You will be subject to, and You will have at least two weeks
+            to decide whether You wish to keep your Account or to delete your
+            Account and data completely before business transfer settlement.
+          </li>
+          <li>
+            <b>Law enforcement:</b> We share information with law enforcement
+            agencies, public authorities, or other organizations if We’re
+            required by law to do so or if such use is reasonably necessary. We
+            will carefully review all such requests to ensure that they have a
+            legitimate basis and are limited to data that law enforcement is
+            authorized to access for specific investigative purposes only.
+          </li>
+        </ul>
+      </div>
+      <div id="local5">
+        <h3>5. Retention of the information</h3>
+        <p>
+          How long We will keep your information depends on the types of the
+          data.
+        </p>
+        <ul>
+          <li>
+            <p>
+              <b
+                >The Information You actively provide during your use of Our
+                app</b
+              >
+            </p>
+            <p>
+              If You only store your data on your Device and do not use the
+              backup feature, You can delete the scripts in the “script”
+              interface or uninstalling Our App directly to clear all your
+              information(irrecoverable);
+            </p>
+            <p>
+              If You use the backup feature and sign with the Google account,
+              You can clear the backed-up script data by deleting the local
+              scripts and syncing manually again.
+            </p>
+          </li>
+          <li>
+            <p>
+              <b>The Information You actively provide when you send feedback</b>
+            </p>
+            <p>
+              Regarding the feedback data You actively provide, We will retain
+              it only for as long as is necessary and We will delete it
+              periodically for a month.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div id="local6">
+        <h3>6. Why and How Do We Transfer the Information</h3>
+        <p>
+          Your information is processed at our operating offices and in any
+          other places where the parties involved in the processing are located.
+          It means that this information may be transferred to — and maintained
+          on — computers located outside of your state, province, country, or
+          other governmental jurisdiction where the data protection laws may
+          differ from those of your jurisdiction. Your consent to this Privacy
+          Policy followed by your submission of such information represents your
+          agreement to that transfer. We will take all steps reasonably
+          necessary to ensure that your data is treated securely and in
+          accordance with this Privacy Policy, and no transfer of your
+          information will take place to an organization or a country unless
+          there are adequate controls in place.
+        </p>
+      </div>
+      <div id="local7">
+        <h3>7. How Do We Protect the Security of Your Information</h3>
+        <p>
+          We use administrative, technical, and physical security measures to
+          help protect your information. We use the following information
+          security measures to protect:
+        </p>
+        <ul>
+          <li>System vulnerability scanning and penetration testing;</li>
+          <li>Protect data integrity;</li>
+          <li>Organizational and legal measures.</li>
+        </ul>
+        <p>
+          The security of your information is important to Us, but please note
+          that all Internet-based methods of data transfer and storage are not
+          100% secure. There are risks associated with any transfer of your
+          information. We keep working to develop additional techniques to
+          protect your information, but it is difficult for Us to guarantee the
+          absolute security of the Internet.
+        </p>
+        <p>
+          Generally, We do not store any data on our server, your data is only
+          stored in your local device and Google server.
+        </p>
+
+        <h4>For EU: GDPR Privacy</h4>
+        <h5>Legal Basis for Processing Personal Data under GDPR</h5>
+        <p>We may process personal data under the following conditions:</p>
+        <ul>
+          <li>
+            <strong>Consent</strong>: You have given your consent for processing
+            personal data for one or more specific purposes.
+          </li>
+          <li>
+            <strong>Performance of a contract</strong>: Provision of personal
+            data is necessary for the performance of an agreement with You
+            and/or for any pre-contractual obligations thereof.
+          </li>
+          <li>
+            <strong>Legal obligations</strong>: Processing personal data is
+            necessary for compliance with a legal obligation to which We are
+            subject.
+          </li>
+          <li>
+            <strong>Vital interests</strong>: Processing personal data is
+            necessary in order to protect your vital interests or of another
+            natural person.
+          </li>
+          <li>
+            <strong>Public interests</strong>: Processing personal data is
+            related to a task that is carried out in the public interest or in
+            the exercise of official authority vested in ourselves.
+          </li>
+          <li>
+            <strong>Legitimate interests</strong>: Processing personal data is
+            necessary for the purposes of the legitimate interests pursued by
+            Us.
+          </li>
+        </ul>
+        <p>
+          In any case, We will gladly help to clarify the specific legal basis
+          that applies to the processing, and in particular whether the
+          provision of personal data is a statutory or contractual requirement,
+          or a requirement necessary to enter into a contract.
+        </p>
+
+        <h5>Your Rights under the GDPR</h5>
+        <p>
+          We undertake to respect the confidentiality of your Personal Data and
+          to guarantee You can exercise your rights.
+        </p>
+        <p>
+          You have the right under this Privacy Policy, and by law if You are
+          within the EU, to:
+        </p>
+        <ul>
+          <li>
+            <strong>Request access to your personal data.</strong> The right to
+            access, update or delete the information We have on You. Whenever
+            made possible, You can access, update or request deletion of your
+            personal data directly within your Account settings section. If You
+            are unable to perform these actions yourself, please contact Us to
+            assist You. This also enables You to receive a copy of the personal
+            data We hold about You.
+          </li>
+          <li>
+            <strong
+              >Request correction of the personal data that We hold about
+              You.</strong
+            >
+            You have the right to have any incomplete or inaccurate information
+            We hold about You corrected.
+          </li>
+          <li>
+            <strong>Object to processing of your personal data</strong>. This
+            right exists where We are relying on a legitimate interest as the
+            legal basis for Our processing and there is something about your
+            particular situation, which makes You want to object to Our
+            processing of your personal data on this ground. You also have the
+            right to object where We are processing your personal data for
+            direct marketing purposes
+          </li>
+          <li>
+            <strong>Request erasure of your personal data</strong>. You have the
+            right to ask Us to delete or remove personal data when there is no
+            good reason for Us to continue processing it.
+          </li>
+          <li>
+            <strong>Request the transfer of your personal data.</strong> We will
+            provide to You, or to a third-party You have chosen, your personal
+            data in a structured, commonly used, machine-readable format. Please
+            note that this right only applies to automated information which You
+            initially provided consent for Us to use or where We used the
+            information to perform a contract with You.
+          </li>
+          <li>
+            <strong>Withdraw your consent.</strong> You have the right to
+            withdraw your consent on using your personal data. If You withdraw
+            your consent, We may not be able to provide You with access to
+            certain specific functionalities of the Service.
+          </li>
+        </ul>
+
+        <h5>Exercising of Your GDPR Data Protection Rights</h5>
+        <p>
+          You may exercise your rights of access, rectification, cancellation
+          and opposition by contacting Us. Please note that We may ask You to
+          verify your identity before responding to such requests. If You make a
+          request, We will try our best to respond to You as soon as possible.
+        </p>
+        <p>
+          You have the right to complain to a Data Protection Authority about
+          Our collection and use of your personal data. For more information, if
+          You are in the European Economic Area (EEA), please contact your local
+          data protection authority in the EEA.
+        </p>
+
+        <h4>For California: CCPA Privacy</h4>
+        <h5>Your Rights under the CCPA</h5>
+        <p>
+          Under this Privacy Policy, and by law if You are a resident of
+          California, You have the following rights:
+        </p>
+        <ul>
+          <li>
+            <strong>The right to notice</strong>. You must be properly notified
+            which categories of personal data are being collected and the
+            purposes for which the personal data is being used.
+          </li>
+          <li>
+            <strong>The right to access / the right to request</strong>. The
+            CCPA permits You to request and obtain from us the information
+            regarding the disclosure of your personal data that has been
+            collected in the past 12 months by us or its subsidiaries to a
+            third-party for the third party's direct marketing purposes.
+          </li>
+          <li>
+            <strong>The right to say no to the sale of personal data</strong>.
+            You also have the right to ask us not to sell your personal data to
+            third parties. You can submit such a request by visiting Our "Do Not
+            Sell My Personal Data" section. We do NOT sell any personal data.
+          </li>
+          <li>
+            <div>
+              <strong>The right to know about your personal data.</strong> You
+              have the right to request and obtain from us the information
+              regarding the disclosure of the following:
+            </div>
+            <ul>
+              <li>The categories of personal data collected</li>
+              <li>The sources from which the personal data was collected</li>
+              <li>
+                The business or commercial purpose for collecting or selling the
+                personal data
+              </li>
+              <li>
+                Categories of third parties with whom We share personal data
+              </li>
+              <li>
+                The specific pieces of personal data We collected about You
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>The right to delete personal data</strong>. You also have
+            the right to request the deletion of your personal data that have
+            been collected in the past 12 months.
+          </li>
+          <li>
+            <div>
+              <strong>The right not to be discriminated against</strong>. You
+              have the right not to be discriminated against for exercising any
+              of your consumer's rights, including by:
+            </div>
+            <ul>
+              <li>Denying goods or services to You</li>
+              <li>
+                Charging different prices or rates for goods or services,
+                including the use of discounts or other benefits or imposing
+                penalties
+              </li>
+              <li>
+                Providing a different level or quality of goods or services to
+                You
+              </li>
+              <li>
+                Suggesting that You will receive a different price or rate for
+                goods or services or a different level or quality of goods or
+                services.
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <h5>Exercising Your CCPA Data Protection Rights</h5>
+        <p>
+          In order to exercise any of your rights under the CCPA, and if You are
+          a California resident, You can email or call Us or visit Our "Do Not
+          Sell My Personal Data" section or web page.
+        </p>
+        <p>
+          We will disclose and deliver the required information free of charge
+          within 45 days of receiving your verifiable request. The time period
+          to provide the required information may be extended once by an
+          additional 45 days when reasonably necessary and with prior notice.
+        </p>
+
+        <h5>Do Not Sell My Personal Data</h5>
+        <p>
+          <strong>We do not sell personal data.</strong> However, when You use
+          the Service, third-party advertising companies may display
+          interest-based advertising (also called online behavioral advertising)
+          using information collected about your online activities over time
+          across multiple websites, applications, and other online service
+          sites.
+        </p>
+        <p>
+          If You wish to opt out of the use of your personal data for
+          interest-based advertising purposes and these potential sales as
+          defined under CCPA law, You may do so by following the instructions in
+          the section 3 “How do we share your information?”.
+        </p>
+        <p>
+          Please note that any opt out is specific to the browser You use. You
+          may need to opt out of every browser that You use.
+        </p>
+
+        <h4>
+          For California: "Do Not Track" Policy as Required by California Online
+          Privacy Protection Act (CalOPPA)
+        </h4>
+        <p>
+          We do not track Our customers over time and across third party
+          websites to provide targeted advertising therefore Our Service does
+          not respond to Do Not Track signals.
+        </p>
+        <p>
+          However, some third party websites do keep track of your browsing
+          activities. If You are visiting such websites, You can set your
+          preferences in your web browser to inform websites that You do not
+          want to be tracked. You can enable or disable DNT by visiting the
+          preferences or settings page of your web browser.
+        </p>
+
+        <h4>
+          Your California Privacy Rights (California Business and Professions
+          Code Section 22581)
+        </h4>
+        <p>
+          California Business and Professions Code section 22581 allows
+          California residents under the age of 18 who are registered users of
+          online sites, services or applications to request and obtain removal
+          of content or information they have publicly posted.
+        </p>
+        <p>
+          To request removal of such data, and if You are a California resident,
+          You can contact Us using the contact information provided below, and
+          include the email address associated with your Account.
+        </p>
+        <p>
+          Be aware that your request does not guarantee complete or
+          comprehensive removal of content or information posted online if the
+          law does not permit or require removal in certain circumstances.
+        </p>
+      </div>
+      <div id="local8">
+        <h3>8. Children's Privacy</h3>
+        <p>
+          Our Service does not address anyone under the age of 13. We do not
+          knowingly collect personally identifiable information from anyone
+          under the age of 13. If You are a parent or guardian and You are aware
+          that your child has provided Us with personal data, please contact Us.
+          If We become aware that We have collected personal data from anyone
+          under the age of 13 without verification of parental consent, We take
+          steps to remove that information from Our servers.
+        </p>
+      </div>
+      <div id="local9">
+        <h3>9. How Do We Notify You of the Changes to This Privacy Policy</h3>
+        <p>
+          We may update Our Privacy Policy from time to time. We will notify You
+          of any changes by posting the new Privacy Policy on this page. We will
+          let You know via a prominent notice on Our Service prior to the change
+          becoming effective and update the "Last Updated" date at the top of
+          this Privacy Policy.
+        </p>
+        <p>
+          You are advised to review this Privacy Policy periodically for any
+          changes. Changes to this Privacy Policy are effective when they are
+          posted on this page.
+        </p>
+      </div>
+      <div id="local10">
+        <h3>10. How to Contact Us If You Have Any Questions</h3>
+        <p>
+          It should be noted that whether or not to send Us your feedback or bug
+          report is a completely voluntary initiative upon your own decision. If
+          You have a concern about your information being misused, or if You
+          want further information about Our Privacy Policy and what it means,
+          please feel free to email Us at stableautoclicker@gmail.com. We will
+          endeavor to provide clear answers to your questions in a timely
+          manner.
+        </p>
+      </div>
+    </div>
+    <script>
+      function getQueryString(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]);
+        return null;
+      }
+    </script>
   </body>
 </html>
