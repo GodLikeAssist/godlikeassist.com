@@ -1,2 +1,0 @@
-- 常见问题
-  - [为什么无障碍服务是必要的?](why-are-accessible.md)
