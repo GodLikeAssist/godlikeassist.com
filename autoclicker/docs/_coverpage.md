@@ -1,6 +1,6 @@
 ![logo](_media/logo.png)
 
-# Ga Auto Clicker <small>1.0</small>
+# GA Auto Clicker <small>1.0</small>
 
 > A Godsent Auto-Clicker
 
