@@ -27,7 +27,7 @@ const config: Config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: "en",
-    locales: ["en", "zh-Hans", "zh-Hant"],
+    locales: ["en","de","es","fil","fr","hi","in","it","ja","kk","ko","ms","pl","pt","ru","th","tr","uk","vi", "zh-Hans", "zh-Hant"]
   },
 
   presets: [
@@ -92,6 +92,27 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
+  plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        createRedirects(existingPath) {
+          const supportedLocales = this.i18n.locales;
+          const defaultLocale = 'en';
+
+          // 检查 URL 中的语言
+          const urlParams = new URLSearchParams(existingPath.split('?')[1]);
+          const locale = urlParams.get('locale');
+
+          if (locale && !supportedLocales.includes(locale)) {
+            return [`/${defaultLocale}${existingPath}`];
+          }
+
+          return [];
+        },
+      },
+    ],
+  ]
 };
 
 export default config;

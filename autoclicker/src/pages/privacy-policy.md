@@ -1,4 +1,7 @@
-  
+---
+title: PRIVACY POLICY
+---  
+
 PRIVACY POLICY
 ==============
 
