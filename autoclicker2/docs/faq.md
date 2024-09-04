@@ -1,48 +1,51 @@
-# FAQ
+# Frequently Asked Questions
 
-## 怎么做
+## 1. What to Do
 
-### 1. 点击器不工作?
+### 1.1 Auto-clicker not working?
 
-如果点击器无法开启,代表无障碍权限没有开启或失效了.关闭并重启无障碍服务即可
+If the auto-clicker fails to start, it means the accessibility permission is not enabled or has expired. Close and restart the accessibility service to fix it.
 
-使用方法:开启无障碍权限后,以多目标模式为例：
+**Usage method** - `For example, in multi-target mode`
 
-1. 开启多目标模式，在出现的浮动菜单中点击“+”添加点击目标，并移动到合适位置，
-2. 点击目标设置其延迟间隔和持续时间（数值越小点击速度越快），
-3. 点击浮动菜单上方的播放按钮，开始自动点击
+1. Enable multi-target mode, click the "+" in the floating menu that appears to add click targets, and move them to the appropriate positions.
+2. Set the delay intervals and durations for the click targets (the smaller the value, the faster the clicking speed).
+3. Click the play button on top of the floating menu to start auto-clicking.
 
-### 2. 点击速度不够快?
+### 1.2 Click speed not fast enough?
 
-在打开点击器之前，请先进入相应的默认设置，将速度预设改为快速（1毫秒），然后打开点击器；
-您也可以在打开点击器后点击某个目标，以修改其延迟间隔和持续时间（数值越小，点击速度越快）
+There are two ways to solve this:
 
-### 3. 无法关闭点击器?
+1. Before starting the auto-clicker, please enter the default settings and change the speed preset to fast (1 millisecond), then run the auto-clicker.
+2. After starting the auto-clicker, click on a target to modify its delay interval and duration (the smaller the value, the faster the clicking speed).
 
-可以按电源键关闭屏幕,屏幕关闭后点击器也会自动关闭
+### 1.3 Unable to stop the auto-clicker?
 
-### 4. 点击器运行一段时间后停止?
+You can press the power button to turn off the screen; the auto-clicker will stop running once the screen is off.
 
-1. 当设置的间隔小于40毫秒时，移动设备没有足够的响应时间，可能导致点击器失效，建议不要长时间运行快速点击或适当增加间隔时间；
-2. 当手机耗电量快速增加时，系统会关闭后台应用，您可以通过“自动启动”和“忽略电池优化权限”解决此问题；
+### 1.4 Auto-clicker stops after running for a while?
 
-> 如果以上两种方法无法解决问题，您可以重启应用
+1. When the set interval is less than 40 milliseconds, mobile devices do not have enough response time, which may cause the auto-clicker to fail. It is advised not to run fast clicking for long periods or to appropriately increase the interval time.
+2. When the phone's battery consumption increases rapidly, the system may close background apps. You can resolve this issue through [Auto Start](https://dontkillmyapp.com/) and [Ignore Battery Optimization Permission](https://dontkillmyapp.com/).
 
-### 5. 开启无障碍权限后仍无法打开点击器?
+> If the above methods do not resolve the issue, you can restart the app.
 
-1. 确保正确开启无障碍权限
-2. 先禁用无障碍权限，然后重新启用，或者关闭并重新启动应用程序
+### 1.5 Auto-clicker still won't open after enabling accessibility permission?
 
-> 如果以上方法仍无法解决,请重新启动手机。
+1. Ensure the accessibility permission is correctly enabled.
+2. Disable the accessibility permission and then re-enable it, or close and restart the application.
 
-## 为什么
+> If the problem persists, please restart your phone.
 
-### 1. 总是需要重启无障碍权限?
+## 2. Why
 
-无障碍权限属于系统权限，Android对此有严格要求，我们无权干涉。
-不过你可以通过设置“自动启动”来解决这个问题
+### 2.1 Always need to restart accessibility permission?
 
-### 2. 点击器运行时无法点击/滑动屏幕?
+Accessibility permission is a system permission, and Android has strict requirements for it. We have no control over it.
+However, you can resolve this issue by setting [Auto Start](https://dontkillmyapp.com/).
 
-由于点击器速度很快，在点击器运行时，如果您控制屏幕，手机屏幕可能无法识别您的手势。
-如果您需要其他手势，建议您先暂停点击器，通过添加更多点击或滑动目标来解决。
+### 2.2 Unable to click or swipe the screen while the auto-clicker is running?
+
+Since the auto-clicker operates at high speeds, if you control the screen while it is running, the phone screen may not recognize your gestures.
+
+> If you need other gestures, it is recommended to pause the auto-clicker first, or add more click or swipe targets to solve this.

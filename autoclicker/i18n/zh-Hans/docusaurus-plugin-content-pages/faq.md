@@ -1,3 +1,8 @@
+---
+title: FAQ
+description: FAQ
+---
+
 # 常见问题
 
 ## 1. 怎么做
